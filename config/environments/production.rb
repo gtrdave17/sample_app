@@ -15,9 +15,7 @@ SampleApp::Application.configure do
   config.assets.compress = true
 
   # Changing default from 'false' to 'true' due to: http://stackoverflow.com/questions/7300532/blueprint-css-rails-3-1-help
-  config.assets.compile = false
-  
-  config.assets.precompile += %w( blueprint/screen.css blueprint/print.css )
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
