@@ -23,7 +23,10 @@ SampleApp::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
 
   # Do not compress assets
-  config.assets.compress = true
+  config.assets.compress = false
+  
+  #Adding to precompile CSS files
+  config.assets.precompile += %w( blueprint/screen.css blueprint/print.css )
 
   # Expands the lines which load the assets
   config.assets.debug = true
