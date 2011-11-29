@@ -14,8 +14,8 @@ SampleApp::Application.configure do
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
-  # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  # Changing default from 'false' to 'true' due to: http://stackoverflow.com/questions/7300532/blueprint-css-rails-3-1-help
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
